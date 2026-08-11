@@ -38,7 +38,7 @@ const SITE_CONFIG = {
   // e coloque o arquivo de imagem correspondente dentro da pasta /img.
   // Não precisa mexer em HTML nem CSS — a galeria é montada automaticamente.
   fotos: [
-    { src: "img/show-boa-viagem.jpg", legenda: "Show acústico — Recife, jul/2026" }
+    { src: "img/show-boa-viagem.jpg", legenda: "Show acústico — Recife, jul/2026" },
     // Exemplo (remova o comentário e ajuste depois de subir as fotos reais):
     //{ src: "img/show-boa-viagem.jpg", legenda: "Show acústico — Recife, jul/2026" },
     // { src: "img/show-corporativo-01.jpg", legenda: "Evento corporativo — Boa Viagem" },
