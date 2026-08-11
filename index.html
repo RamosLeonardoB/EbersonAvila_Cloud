@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Éberson Ávila — Música ao vivo</title>
+<meta name="description" content="Éberson Ávila, artista de música ao vivo em Recife/PE. Shows particulares, corporativos e públicos. Confira a agenda e contrate.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== HEADER (desktop) ===== -->
+<header class="site-header" id="topo">
+  <div class="header-inner">
+    <span class="logo">Éberson <em>Ávila</em></span>
+    <nav class="nav-desktop" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#fotos">Fotos</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#contato">Contratar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-eq" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow">Música ao vivo · Recife/PE</p>
+      <h1>Éberson <em>Ávila</em></h1>
+      <p class="hero-tagline">Voz e violão para casamentos, eventos corporativos e shows abertos ao público. Repertório que vai do MPB ao sertanejo raiz, sob medida pra cada palco.</p>
+      <div class="hero-actions">
+        <a href="#agenda" class="btn btn-primary">Ver agenda</a>
+        <a href="#contato" class="btn btn-ghost">Contratar show</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero.jpg" alt="Éberson Ávila se apresentando ao vivo" onerror="this.closest('.hero-photo').classList.add('img-fallback')">
+    </div>
+  </section>
+
+  <div class="wave-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- ===== SOBRE ===== -->
+  <section class="sobre" id="sobre">
+    <p class="eyebrow">Sobre</p>
+    <h2>Um show pensado pro seu momento</h2>
+    <p>Há mais de uma década nos palcos de Pernambuco, Éberson Ávila constrói cada apresentação em cima do que a ocasião pede: um set intimista de voz e violão pra cerimônias, um repertório animado pra confraternizações de empresa, ou uma noite inteira de música autoral e regravações marcantes em casas de show e eventos abertos.</p>
+    <p>Antes de cada contrato, a conversa é sobre o que faz sentido pro seu evento — trilha, duração, formato (solo, duo ou banda) e repertório.</p>
+  </section>
+
+  <div class="wave-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- ===== GALERIA DE FOTOS ===== -->
+  <section class="galeria" id="fotos">
+    <p class="eyebrow">Registro</p>
+    <h2>Fotos dos shows</h2>
+    <p class="section-lead">Um retrato dos últimos palcos — atualizado direto do arquivo de fotos do artista.</p>
+
+    <div class="galeria-grid" id="galeriaGrid">
+      <!-- preenchido via js/gallery.js -->
+    </div>
+  </section>
+
+  <div class="wave-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- ===== AGENDA ===== -->
+  <section class="agenda" id="agenda">
+    <p class="eyebrow">Agenda</p>
+    <h2>Próximos shows</h2>
+    <p class="section-lead">Sincronizada automaticamente com o Google Agenda: todo evento marcado com a etiqueta <code>#show</code> aparece aqui.</p>
+
+    <div class="agenda-status" id="agendaStatus" role="status"></div>
+    <ul class="agenda-lista" id="agendaLista">
+      <!-- preenchido via js/agenda.js -->
+    </ul>
+  </section>
+
+  <div class="wave-divider" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+
+  <!-- ===== CONTATO / CONTRATAÇÃO ===== -->
+  <section class="contato" id="contato">
+    <p class="eyebrow">Contratação</p>
+    <h2>Vamos marcar seu show</h2>
+    <p class="section-lead">Casamento, aniversário, evento de empresa ou show aberto ao público — conte o que você tem em mente.</p>
+
+    <div class="contato-grid">
+      <form class="contato-form" id="contatoForm" action="https://formsubmit.co/SEU-EMAIL@dominio.com" method="POST">
+        <input type="hidden" name="_subject" value="Novo pedido de show — site Éberson Ávila">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+
+        <label>
+          Nome
+          <input type="text" name="Nome" required autocomplete="name">
+        </label>
+
+        <label>
+          Telefone / WhatsApp
+          <input type="tel" name="Telefone" required autocomplete="tel" placeholder="(81) 9XXXX-XXXX">
+        </label>
+
+        <label>
+          E-mail
+          <input type="email" name="Email" required autocomplete="email">
+        </label>
+
+        <label>
+          Tipo de evento
+          <select name="Tipo de evento" required>
+            <option value="" disabled selected>Selecione</option>
+            <option value="Particular">Particular (casamento, aniversário, festa)</option>
+            <option value="Corporativo">Corporativo</option>
+            <option value="Público">Show público / casa de eventos</option>
+          </select>
+        </label>
+
+        <label>
+          Data prevista
+          <input type="date" name="Data prevista">
+        </label>
+
+        <label>
+          Conte mais sobre o evento
+          <textarea name="Mensagem" rows="4" placeholder="Local, formato (solo/duo/banda), duração, repertório desejado..."></textarea>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-full">Enviar pedido</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+
+      <div class="contato-direto">
+        <a class="btn btn-whatsapp" id="whatsappLink" href="#" target="_blank" rel="noopener">
+          <span aria-hidden="true">●</span> Chamar no WhatsApp
+        </a>
+        <ul class="contato-info">
+          <li><strong>Base:</strong> Recife/PE — atende Grande Recife e interior</li>
+          <li><strong>Formatos:</strong> Solo (voz e violão), duo, banda</li>
+          <li><strong>Resposta:</strong> em até 24h úteis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Éberson Ávila — música ao vivo</p>
+  <div class="footer-social" id="footerSocial"></div>
+  <p class="footer-copy">&copy; <span id="anoAtual"></span> Éberson Ávila. Todos os direitos reservados.</p>
+</footer>
+
+<!-- ===== NAV MOBILE (barra inferior estilo player) ===== -->
+<nav class="nav-mobile" aria-label="Navegação principal mobile">
+  <a href="#topo" class="nav-item" data-target="topo">
+    <span class="nav-icon">◆</span><span>Início</span>
+  </a>
+  <a href="#fotos" class="nav-item" data-target="fotos">
+    <span class="nav-icon">▦</span><span>Fotos</span>
+  </a>
+  <a href="#agenda" class="nav-item" data-target="agenda">
+    <span class="nav-icon">▤</span><span>Agenda</span>
+  </a>
+  <a href="#contato" class="nav-item" data-target="contato">
+    <span class="nav-icon">✎</span><span>Contato</span>
+  </a>
+</nav>
+
+<!-- Lightbox da galeria -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">&times;</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script src="js/config.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/agenda.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
